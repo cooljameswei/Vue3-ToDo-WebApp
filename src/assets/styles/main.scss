@@ -1,0 +1,23 @@
+html, body, #app {
+  @apply w-full h-full
+}
+
+@mixin background ($folder:style1, $img:file, $type:png, $size:cover ,$repeat:no-repeat ) {
+  background-image: url(../#{$img}.#{$type}) !important;
+  background-size: #{$size};
+  background-repeat: #{$repeat};
+}
+@mixin overflow($overflow:none){
+  overflow-y: auto;
+}
+#app {
+  @include background(style1, back,jpg, cover, repeat-y);
+  @include overflow(hidden)
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.150s ease-in-out;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}

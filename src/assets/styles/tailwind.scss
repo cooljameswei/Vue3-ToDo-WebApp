@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// buttons
+.btn-primary {
+  @apply bg-indigo-500 hover:bg-indigo-700;
+}
+
+.btn-success {
+  @apply bg-green-500 hover:bg-green-700;
+}
+
+.btn-error {
+  @apply bg-red-500 hover:bg-red-700;
+}
+
+.btn-warning {
+  @apply bg-yellow-500 hover:bg-yellow-700;
+}
+
+.btn-login-google {
+  @apply bg-indigo-500 hover:bg-indigo-700;
+}
+
+.btn-login-github {
+  @apply bg-black hover:bg-gray-700 text-white;
+}
+
+.card {
+  @apply w-full px-4 py-4 rounded;
+}
+
+// card
+.todo-card {
+}
+
+.none-card {
+  @apply text-center;
+}
+
+p, label {
+  @apply text-black dark:text-gray-50 transition-colors;
+}
+
+span.emphasis {
+  @apply font-bold text-indigo-500 dark:text-indigo-300 transition-colors;
+}
+
+.bg-container {
+  @apply dark:bg-gray-800 bg-white;
+}
